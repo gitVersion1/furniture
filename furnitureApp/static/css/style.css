@@ -1,0 +1,108 @@
+/* stilizimi fillestar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    word-spacing: 3px;
+    font-family: 'Roboto',
+    sans-serif;
+}
+/* navbar */
+.navbar-brand{
+    text-transform: uppercase;
+}
+.profile{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+}
+.line_1{
+    width: 25px;
+    margin: 30px 4px 5px;
+}
+.navbar-nav .nav-item a,
+.navbar-brand {
+    color: #000;
+}
+.badge{
+    font-size: 0.5rem;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.banner{
+    height: 100vh;
+}
+.page-title{
+    font-size: 3.5rem;
+}
+/* banner */
+.products img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.products img:nth-child(2){
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    position: relative;
+    top: 50%;
+}
+/* products */
+.chair {
+    height: 300px;
+}
+.chairs{
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+.sofa{
+    width: 700px;
+}
+/* testimonial */
+.profile_test{
+    top: 2%;
+    left: 20% ;
+}
+.profile_test img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.test-star i{
+    color: #d6c41d;
+}
+/* newsletter */
+.cover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 50%);
+}
+
+#subscribe {
+    bottom: 9%;
+    right: 5%;
+}
+
+/* footer */
+.fa-facebook-f {
+    width: 31px;
+    height: 31px;
+    padding-left: 0.7rem;
+}

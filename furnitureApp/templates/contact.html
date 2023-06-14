@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% extends 'index.html' %}
+{% load static %}
+{% block title %} Furniture | Contact Page{% endblock %}
+{% block content %}
+
+    <div class="container mb-5">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 bg-light">
+                <form action="" method="" class="p-5">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label">Surname</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Your surname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark text-light">Submit</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="{% static 'images/pixeltrue-contact-me.png' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+   
+
+    {% endblock %}
