@@ -13,7 +13,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link " href="products.html">Products
+                        <a class="nav-link " href="{% url 'products' %}">Products
                         </a>
                     </li>
                     <li class="nav-item dropdown px-3">
@@ -22,8 +22,9 @@
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="products.html">Chair</a></li>
-                            <li><a class="dropdown-item" href="#">Sofa</a></li>
+                            {% for cat in category %}
+                                <li><a class="dropdown-item" href="{% url 'category_products' cat.pk %}">{{cat.category_name}}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
                     <li class="nav-item px-3">
